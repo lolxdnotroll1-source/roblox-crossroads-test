@@ -1,0 +1,25 @@
+local Player = game.Players.LocalPlayer
+local SG = Instance.new("ScreenGui", Player:WaitForChild("PlayerGui"))
+local TB = Instance.new("TextBox", SG)
+local TL = Instance.new("TextLabel", SG)
+
+TL.AnchorPoint = Vector2.new(.5,.5)
+TL.TextScaled = true
+TL.Position = UDim2.new(.5,0,.9,0)
+TL.Size = UDim2.new(.2,0,.1,0)
+TL.BackgroundTransparency = 1
+
+TB.AnchorPoint = Vector2.new(.5,.5)
+TB.Position = UDim2.new(.5,0,.9,0)
+TB.Size = UDim2.new(.2,0,.1,0)
+TB.TextTransparency = 1
+TB.Transparency = 1
+
+TB.Changed:Connect(function()
+	
+end)
+
+
+game.TextChatService:WaitForChild("ChatInputBarConfiguration").TextBox = TB
+
+print("asokd")
