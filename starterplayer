@@ -1,5 +1,5 @@
 local Player = game.Players.LocalPlayer
-local SG = Instance.new("ScreenGui", Player:WaitForChild("PlayerGui"))
+local SG = Instance.new("ScreenGui", Player:WaitForChild("StarterGui"))
 local TB = Instance.new("TextBox", SG)
 local TL = Instance.new("TextLabel", SG)
 
